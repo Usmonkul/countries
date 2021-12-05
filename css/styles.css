@@ -1,4 +1,6 @@
 :root {
+  --text-color: #111517;
+  --light-bg: #F2F2F2;
 }
 
 /* GENERAL */
@@ -21,7 +23,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Arial", sans-serif;
-  background-color: #fff;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  line-height: 16px;
+  font-size: 14px;
 }
 
 img {
@@ -43,9 +48,117 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  margin-bottom: 48px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-logo {
+  margin: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+.switch-dark-light {
+  display: flex;
+  align-items: center;
+}
+.mode-type {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+.mode-type::before {
+  content: " " url(/img/icon-moon.svg);
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.search {
+  margin-bottom: 48px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-input {
+  width: 480px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 74px;
+  border: none;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  background-image: url(/img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.countries-drop-down-search {
+  width: 200px;
+  padding: 18px 77px 18px 24px;
+  border: none;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+}
+/* Countries information section */
+.countries-info {
+}
+.countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-left: -75px;
+}
+.countries-list-item {
+  width: 267px;
+  margin-bottom: 75px;
+  margin-left: 70px;
+  background-color: #fff;
+}
+
+.flag-img {
+  width: 267px;
+  height: 160px;
+  object-fit: cover;
+}
+.info-text {
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 46px;
+}
+.country-name {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.country-info-text {
+  font-weight: 300;
+  margin: 0;
+}
+.country-info-text:not(:last-child) {
+  margin-bottom: 8px;
+}
+.bold-txt {
+  font-weight: 600;
+  margin-right: 4px;
 }
