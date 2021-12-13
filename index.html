@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="dark-mode">
   <header class="header">
     <div class="header-inner container">
       <h2 class="header-logo">Where in the world?</h2>
@@ -22,10 +22,12 @@
       <form action="https//echo.htmlacademy.ru" method="get" class="form">
         <input class="search-input" type="search" placeholder="Search for a country.." name="search" aria-label="search">
         <select class="countries-drop-down-search" name="countries" id="country-search">
-          <option value="germany">Germany</option>
-          <option value="usa">Unated States of America</option>
-          <option value="brazil">Brazil</option>
-          <option value="iceland">Iceland</option>
+          <option value="" disabled selected>Filter by Region</option>
+          <option value="africa">Africa</option>
+          <option value="america">America</option>
+          <option value="asia">Asia</option>
+          <option value="europe">Europe</option>
+          <option value="oceania">Oceania</option>
         </select>
       </form>
     </section>
