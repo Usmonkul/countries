@@ -62,7 +62,7 @@ img {
 /* Body */
 /* .dark-mode {
   --text-color: #fff;
-  --light-bg: #000;
+  --light-bg: #202C36;
   --white-bg: #2B3844;
 } */
 /* Header */
@@ -87,6 +87,9 @@ img {
 .switch-dark-light {
   display: flex;
   align-items: center;
+  background-color: var(--white-bg);
+  border: none;
+  color: var(--text-color);
 }
 .mode-type {
   font-weight: 600;
@@ -116,6 +119,7 @@ img {
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
   border-radius: 5px;
   background-color: var(--white-bg);
+  color: var(--text-color);
   background-image: url(/img/search.svg);
   background-repeat: no-repeat;
   background-position: 20px;
