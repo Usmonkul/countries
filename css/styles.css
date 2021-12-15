@@ -60,11 +60,11 @@ img {
   margin-right: auto;
 }
 /* Body */
-/* .dark-mode {
+.dark-mode {
   --text-color: #fff;
   --light-bg: #202C36;
   --white-bg: #2B3844;
-} */
+}
 /* Header */
 .header {
   background-color: var(--white-bg);
