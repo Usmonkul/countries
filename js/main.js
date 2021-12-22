@@ -11,12 +11,5 @@
 const elDarkModeButton = document.querySelector('.switch-dark-light');
 
 elDarkModeButton.addEventListener('click', function () {
-  document.body.classList.add('dark-mode');
-
+  document.body.classList.toggle('dark-mode');
 })
-
-const elChaneLiteMode = document.querySelector('.litemode');
-
-elChaneLiteMode.addEventListener('click', function () {
-  document.body.classList.remove('dark-mode');
-});
