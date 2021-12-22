@@ -127,6 +127,11 @@ img {
 .search {
   margin-bottom: 48px;
 }
+/* Main */
+.main {
+  flex-grow: 1;
+}
+/* Form section */
 .form {
   display: flex;
   align-items: center;
