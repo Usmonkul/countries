@@ -259,6 +259,7 @@ img {
 .country-flag {
   width: 560px;
   border-radius: 10px;
+  margin-right: 141px;
 }
 .country-specific-info-wrapper {
   width: 100%;
@@ -273,11 +274,11 @@ img {
 }
 .country-details {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
 .left-info {
   margin-right: 141px;
-  margin-bottom: 68px;
 }
 .country-details-item {
   display: flex;
@@ -291,6 +292,9 @@ img {
 .country-details-value {
   line-height: 32px;
   margin-left: 0;
+}
+.border-countries {
+  margin-top: 68px;
 }
 .border-country-details-item {
   display: flex;
